@@ -1,1 +1,6 @@
 FROM redis:6.2
+
+ARG SITE_CACHE_DB_PASSWORD=${SITE_CACHE_DB_PASSWORD}
+
+ENV REDIS_PASSWORD=${SITE_CACHE_DB_PASSWORD}
+CMD ["sh", "-c", "exec redis-server --requirepass \"$REDIS_PASSWORD\""]

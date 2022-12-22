@@ -4,8 +4,8 @@
     "notExposeAsWebApp": true,
     "envVars": [
         {
-            "key": "REDIS_PASSWORD",
-            "value": "$REDIS_PASSWORD"
+            "key": "SITE_CACHE_DB_PASSWORD",
+            "value": "$SITE_CACHE_DB_PASSWORD"
         }
     ]
 }
